@@ -14,53 +14,36 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 I've added conditions that keep our player, the space-ship, in the scene's boundaries.
 But first, let's lay some ground symbols:
 
-This code apper in the following address [GitHub Pages](https://pages.github.com/)
+This code apper in the following link [Click Me ](https://github.com/shahaknir/Weekly4-GameDev/blob/master/Assets/Scripts/1-movers/KeyboardMover.cs)
 
-1.```csharp
-float offsetx = 11f; 
-```
-2.```csharp
-float offsety = 3.5f;
-```
-3.```csharp
-Vector2 GameBoundaries;
-```
+1.float offsetx = 11f; 
+2.float offsety = 3.5f;
+3.Vector2 GameBoundaries;
+
     
-The actual changes can on _Asserts_ :arrow_forward: _Scripts_ :arrow_forward: _1-movers_ :arrow_forward: _KeyboardMover.cs_
+The actual changes can on [_Asserts_](https://github.com/shahaknir/Weekly4-GameDev/tree/master/Assets) :arrow_forward: [_Scripts_](https://github.com/shahaknir/Weekly4-GameDev/tree/master/Assets/Scripts) :arrow_forward: [_1-movers_](https://github.com/shahaknir/Weekly4-GameDev/tree/master/Assets/Scripts/1-movers) :arrow_forward: [_KeyboardMover.cs_](https://github.com/shahaknir/Weekly4-GameDev/blob/master/Assets/Scripts/1-movers/KeyboardMover.cs)
 
 
-Checking our player's position and keeping him inside the boundaries of the game.
+Checking our player's position and keeping him inside the boundaries of the game:
 ```csharp
-if (this.transform.position.x <= -GameBoundaries.x){
-            this.transform.position = new Vector3(-GameBoundaries.x, transform.position.y, transform.position.z);
+		if (this.transform.position.x <= -GameBoundaries.x){
+            this.transform.position = 
+			new Vector3(-GameBoundaries.x, transform.position.y, transform.position.z);
         }
         else if (this.transform.position.x >= GameBoundaries.x){
-            this.transform.position = new Vector3(GameBoundaries.x, transform.position.y, transform.position.z);
+            this.transform.position = 
+			new Vector3(GameBoundaries.x, transform.position.y, transform.position.z);
         }
         if (this.transform.position.y <= -GameBoundaries.y){
-            this.transform.position = new Vector3(transform.position.x, -GameBoundaries.y , transform.position.z);
+            this.transform.position = 
+			new Vector3(transform.position.x, -GameBoundaries.y , transform.position.z);
         }
         else if (this.transform.position.y >= GameBoundaries.y){
-            this.transform.position = new Vector3(transform.position.x, GameBoundaries.y, transform.position.z);
+            this.transform.position = 
+			new Vector3(transform.position.x, GameBoundaries.y, transform.position.z);
         }
 
 ```
-
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
-
-    git lfs install 
-
-To clone faster, you can limit the depth to 1 like this:
-
-    git clone --depth=1 https://github.com/<repository-name>.git
-
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
-
-
 
 ## Credits
 
