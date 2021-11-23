@@ -11,12 +11,12 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 
 ## Space-Ship Game
 > Avoid the enamy spaceShips in order to survive the next round!:muscle::muscle:
-![This is an image]()
+![This is an image](https://github.com/shahaknir/Weekly4-GameDev/blob/master/GamePlayImg1.png)
 
 Use the arrow keys on your keyboard in order to navigate the spaceShip.
 Use the space key in oder to shoot.
 >Kill as much enamies to get the best score.
-![This is an image]()
+![This is an image](https://github.com/shahaknir/Weekly4-GameDev/blob/master/GamePlayImg2.png)
 
 ## Change A Component in The Space-Ship game:
 ### Boundaries
