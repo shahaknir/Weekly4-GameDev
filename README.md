@@ -9,6 +9,15 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 
 :rocket::rocket::rocket::rocket::rocket::rocket::rocket:
 
+## Space-Ship Game
+> Avoid the enamy spaceShips in order to survive the next round!:muscle::muscle:
+![This is an image]()
+
+Use the arrow keys on your keyboard in order to navigate the spaceShip.
+Use the space key in oder to shoot.
+>Kill as much enamies to get the best score.
+![This is an image]()
+
 ## Change A Component in The Space-Ship game:
 ### Boundaries
 I've added conditions that keep our player, the space-ship, in the scene's boundaries.
